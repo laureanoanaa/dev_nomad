@@ -1,7 +1,7 @@
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 
-const firebaseConfig = {
+export const firebaseConfig = {
   apiKey: "AIzaSyBWopeKczIQKam_KT8T-8HMnhpjKLetvaI",
   authDomain: "dev-nomad-acl.firebaseapp.com",
   projectId: "dev-nomad-acl",
@@ -11,5 +11,5 @@ const firebaseConfig = {
   measurementId: "G-NTWVGG1ZFF"
 };
 
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+export const app = initializeApp(firebaseConfig);
+export const analytics = getAnalytics(app);
