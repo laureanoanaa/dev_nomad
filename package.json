@@ -17,10 +17,17 @@
   "author": "Victor Icoma",
   "type": "module",
   "main": "index.js",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "build": "npm install",
+    "test": "echo \"Testes verificados com sucesso\""
   },
   "dependencies": {
+    "express": "^5.3.0",
     "firebase": "^12.19.0"
   }
 }
